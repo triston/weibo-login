@@ -1,0 +1,5 @@
+login:
+  weibo_client_id:
+    default: ''
+  weibo_client_secret:
+    default: ''
