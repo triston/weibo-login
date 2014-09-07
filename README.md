@@ -13,7 +13,7 @@ Authenticate with discourse with Weibo.
 
 <img src="https://meta.discourse.org/uploads/default/34524/32ac2f59e766ca9f.png" width="527" height="500">
 
-## Installation
+## Installation / 安装
 
 Run `rake plugin:install repo=https://github.com/fantasticfears/weibo-login` in your discourse directory
 
@@ -27,7 +27,7 @@ In production, recompile your assets: `rake assets:precompile`
 
 在生产模式下，重编译 assets `rake assets:precompile`
 
-## Usage
+## Usage / 使用
 
 Go to Site Settings's login category, fill in the client id and client secret.
 
