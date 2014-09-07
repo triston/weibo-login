@@ -1,8 +1,8 @@
-# Weibo login plugin / 微博登陆插件
+# Weibo login plugin for Discourse / Discourse 微博登录插件
 
 Authenticate with discourse with Weibo.
 
-通过微博登陆 Discourse。
+通过微博登录 Discourse。
 
 ## Register Client Key & Secert / 申请微博接入
 
