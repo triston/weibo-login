@@ -8,7 +8,7 @@ Authenticate with discourse with Weibo.
 
 1. 登录[微博开发者中心](http://open.weibo.com/connect?bottomnav=1&wvr=5)，注册填写相关信息。
 2. 点击`开始接入`。
-3. 填写相关信息。`网站域名`可填写根域名或者具体域名。如图所示。（验证所需要的标签可在 Discourse 设置中插入，验证后即可删除）
+3. 填写相关信息。`网站域名`可填写根域名或者具体域名。如图所示。（验证所需要的标签可在 Discourse 设置中插入，验证后即可删除；访问 Discourse 管理面板 - 内容 - 页面顶部）
 4. 在申请到的后台找到`网站信息`的`基本信息`一栏，获得`key`和`secret`，将其填入Discourse 设置中。
 
 <img src="https://meta.discourse.org/uploads/default/34524/32ac2f59e766ca9f.png" width="527" height="500">
