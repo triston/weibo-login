@@ -55,7 +55,7 @@ Go to Site Settings's login category, fill in the client id and client secret.
 
 Visit [topic on Discourse Meta](https://meta.discourse.org/t/weibo-login-plugin/19735) or [GitHub Issues](https://github.com/fantasticfears/weibo-login/issues).
 
-访问[Discourse Meta上的主题](https://meta.discourse.org/t/weibo-login-plugin/19735)或[GitHub Issues](https://github.com/fantasticfears/weibo-login/issues)。
+访问[中文论坛的主题](https://meta.discoursecn.org/t/topic/43)或[GitHub Issues](https://github.com/fantasticfears/weibo-login/issues)。
 
 ## Changelog
 
