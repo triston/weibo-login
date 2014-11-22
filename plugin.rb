@@ -1,6 +1,6 @@
 # name: Weibo login
 # about: Authenticate with discourse with weibo.
-# version: 0.1.0
+# version: 0.2.0
 # author: Erick Guan
 
 gem 'omniauth-weibo-oauth2', '0.3.0'
@@ -39,7 +39,7 @@ class WeiboAuthenticator < ::Auth::Authenticator
 
   def after_create_account(user, auth)
     weibo_uid = auth[:uid]
-    ::PluginStore.set('weibo', "weibo_id_#{weibo_uid}", {user_id: user.id})
+    ::PluginStore.set('weibo', "weibo_uid_#{weibo_uid}", {user_id: user.id})
   end
 
   def register_middleware(omniauth)

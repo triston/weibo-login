@@ -59,4 +59,4 @@ Visit [topic on Discourse Meta](https://meta.discourse.org/t/weibo-login-plugin/
 
 ## Changelog
 
-Current version: 0.1.0
+Current version: 0.2.0
