@@ -1,9 +1,9 @@
 # name: Weibo login
 # about: Authenticate with discourse with weibo.
-# version: 0.2.0
+# version: 0.3.0
 # author: Erick Guan
 
-gem 'omniauth-weibo-oauth2', '0.3.0'
+gem 'omniauth-weibo-oauth2', '0.4.0'
 
 class WeiboAuthenticator < ::Auth::Authenticator
 
@@ -15,11 +15,8 @@ class WeiboAuthenticator < ::Auth::Authenticator
     result = Auth::Result.new
 
     data = auth_token[:info]
-    credentials = auth_token[:credentials]
     email = auth_token[:extra][:email]
     raw_info = auth_token[:extra][:raw_info]
-    name = data['name']
-    username = data['nickname']
     weibo_uid = auth_token[:uid]
 
     current_info = ::PluginStore.get('weibo', "weibo_uid_#{weibo_uid}")
@@ -29,8 +26,8 @@ class WeiboAuthenticator < ::Auth::Authenticator
         User.where(id: current_info[:user_id]).first
       end
 
-    result.name = name
-    result.username = username
+    result.name = data['name']
+    result.username = data['nickname']
     result.email = email
     result.extra_data = { weibo_uid: weibo_uid, raw_info: raw_info }
 
@@ -38,7 +35,7 @@ class WeiboAuthenticator < ::Auth::Authenticator
   end
 
   def after_create_account(user, auth)
-    weibo_uid = auth[:uid]
+    weibo_uid = auth[:extra_data][:uid]
     ::PluginStore.set('weibo', "weibo_uid_#{weibo_uid}", {user_id: user.id})
   end
 

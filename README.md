@@ -59,4 +59,6 @@ Visit [topic on Discourse Meta](https://meta.discourse.org/t/weibo-login-plugin/
 
 ## Changelog
 
-Current version: 0.2.0
+Current version: 0.3.0
+
+0.3.0: 修正没有正确保存 uid 的 bug。
