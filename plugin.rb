@@ -3,7 +3,7 @@
 # version: 0.3.0
 # author: Erick Guan
 
-gem 'omniauth-weibo-oauth2'
+gem 'omniauth-weibo-oauth2',:git => 'https://github.com/beenhero/omniauth-weibo-oauth2.git'
 
 class WeiboAuthenticator < ::Auth::Authenticator
 
