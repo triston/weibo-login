@@ -1,6 +1,6 @@
 # name: Weibo login
 # about: Authenticate with discourse with weibo.
-# version: 0.4.0
+# version: 0.4.1
 # author: Erick Guan
 # url: https://github.com/fantasticfears/weibo-login
 
@@ -86,7 +86,7 @@ class WeiboAuthenticator < ::Auth::Authenticator
 
     data = auth_token[:info]
     email = auth_token[:extra][:email]
-    raw_info = auth_token[:extra][:raw_info]
+    raw_info = auth_token[:extra][:raw_info].slice(%i[screen_name verified])
     weibo_uid = auth_token[:uid]
 
     current_info = ::PluginStore.get('weibo', "weibo_uid_#{weibo_uid}")

@@ -43,7 +43,8 @@ Visit [topic on Discourse Meta](https://meta.discourse.org/t/weibo-login-plugin/
 
 ## Changelog
 
-Current version: 0.4.0
+Current version: 0.4.1
 
 0.3.0: 修正没有正确保存 uid 的 bug。
 0.4.0: 包含登录策略 gem，去掉下载外部 gem 的步骤。
+0.4.1: 限制保存的内容，解决 CookieOverflow 的问题。
