@@ -2,6 +2,7 @@
 # about: Authenticate with discourse with weibo.
 # version: 0.4.0
 # author: Erick Guan
+# url: https://github.com/fantasticfears/weibo-login
 
 # inline gem 'omniauth-weibo-oauth2'
 
